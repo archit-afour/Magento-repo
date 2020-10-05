@@ -1,0 +1,34 @@
+<?php
+	//echo 'This is a simple custom module and it does not include admin and database realted files.';
+?>
+<form class="" action="<?php echo $block->getBaseUrl().'test/index/save'; ?>" id="learning-test-form" method="post">
+    <fieldset class="fieldset">
+        <legend class="legend"><span>Test Form For Test Module</span></legend><br>
+        <div class="field note no-label">Please fill the details.</div>
+        <div class="field firstname">
+            <label class="label" for="firstname"><span>First Name</span></label>
+            <div class="control">
+                <input name="firstname" id="firstname" title="Firstname" value="" class="input-text" type="text">
+            </div>
+        </div>
+        <div class="field lastname">
+            <label class="label" for="lastname"><span>Last Name</span></label>
+            <div class="control">
+                <input name="lastname" id="lastname" title="Lastname" value="" class="input-text" type="text">
+            </div>
+        </div>
+        <div class="field address">
+            <label class="label" for="address"><span>Address</span></label>
+            <div class="control">
+                <textarea name="address" id="address" title="Address" class="input-text" cols="5" rows="3"></textarea>
+            </div>
+        </div>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <button type="submit" title="Submit" class="action submit primary">
+                <span>Submit</span>
+            </button>
+        </div>
+    </div>
+</form>
