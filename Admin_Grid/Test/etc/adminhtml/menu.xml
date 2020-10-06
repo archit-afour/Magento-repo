@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Webkul_Grid Menu
+ *
+ * @category    Webkul
+ * @package     Webkul_Grid
+ * @author      Webkul Software Private Limited
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Learning_Test::manager" title="Grid Manager" module="Learning_Test" sortOrder="10" resource="Learning_Test::manager"/>
+    	<add id="Learning_Test::add_row" title="Grid Manager" module="Learning_Test" sortOrder="20" parent="Learning_Test::manager" action="grid/test" resource="Learning_Test::add_row"/>
+    </menu>
+</config>
