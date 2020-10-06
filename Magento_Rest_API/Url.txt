@@ -1,0 +1,1 @@
+http://localhost:86/rest/default/V1/products?searchCriteria[pageSize]=50
