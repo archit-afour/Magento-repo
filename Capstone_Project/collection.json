@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "42066273-a5d6-47d2-b3bb-f5a72f2eaba1",
+		"name": "Capstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "order details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jirsyfp33o3a6xbo52zps8rvoo55ngnt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/orders/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"orders",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Shipping_info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "lc0k2ca7ge8ukoy8dwjtuibjw49xzxel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"addressInformation\": {\n    \"shipping_address\": {\n      \"region\": \"Uttar Pradesh\",\n      \"region_id\": 566,\n      \"region_code\": \"UP\",\n      \"country_id\": \"IN\",\n      \"street\": [\n        \"CL\"\n      ],\n      \"postcode\": \"246701\",\n      \"city\": \"Bijnor\",\n      \"firstname\": \"Archit\",\n      \"lastname\": \"Agarwal\",\n      \"email\": \"archit@gmail.com\",\n      \"telephone\": \"7417605610\"\n    },\n    \"billing_address\": {\n      \"region\": \"Uttar Pradesh\",\n      \"region_id\": 566,\n      \"region_code\": \"UP\",\n      \"country_id\": \"IN\",\n      \"street\": [\n        \"CL\"\n      ],\n      \"postcode\": \"246701\",\n      \"city\": \"Bijnor\",\n      \"firstname\": \"Archit\",\n      \"lastname\": \"Agarwal\",\n      \"email\": \"archit@gmail.com\",\n      \"telephone\": \"7417605610\"\n    },\n    \"shipping_carrier_code\": \"flatrate\",\n    \"shipping_method_code\": \"flatrate\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/carts/mine/shipping-information",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"shipping-information"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "lc0k2ca7ge8ukoy8dwjtuibjw49xzxel",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"paymentMethod\": {\n    \"method\": \"paymentmethod\"\n  },\n  \"billing_address\": {\n    \"email\": \"archit@gmail.com\",\n    \"region\": \"Uttar Pradesh\",\n    \"region_id\": 566,\n    \"region_code\": \"UP\",\n    \"country_id\": \"IN\",\n    \"street\": [\n      \"CL\"\n    ],\n    \"postcode\": \"246701\",\n    \"city\": \"Bijnor\",\n    \"telephone\": \"7417605610\",\n    \"firstname\": \"Archit\",\n    \"lastname\": \"Agarwal\"\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/carts/mine/payment-information",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"carts",
+						"mine",
+						"payment-information"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Review_order_as_asmin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jirsyfp33o3a6xbo52zps8rvoo55ngnt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/orders/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"orders",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_invoice",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jirsyfp33o3a6xbo52zps8rvoo55ngnt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"capture\": true,\n  \"notify\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/order/6/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"order",
+						"6",
+						"invoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_invoice",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jirsyfp33o3a6xbo52zps8rvoo55ngnt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"capture\": true,\n  \"notify\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/order/3/invoice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"order",
+						"3",
+						"invoice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "View_incoice",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jirsyfp33o3a6xbo52zps8rvoo55ngnt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/invoices/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"invoices",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create_shipment",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jirsyfp33o3a6xbo52zps8rvoo55ngnt",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"items\": [\n    {\n      \"order_item_id\": 3,\n      \"qty\": 1\n    },\n    {\n      \"order_item_id\": 4,\n      \"qty\": 1\n    }\n  ],\n  \"tracks\": [\n    {\n      \"track_number\": \"1Y-9876543210\",\n      \"title\": \"United Parcel Service\",\n      \"carrier_code\": \"ups\"\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:86/rest/default/V1/order/3/ship",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "86",
+					"path": [
+						"rest",
+						"default",
+						"V1",
+						"order",
+						"3",
+						"ship"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

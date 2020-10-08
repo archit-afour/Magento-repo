@@ -1,0 +1,20 @@
+Order Details Url:
+http://localhost:86/rest/default/V1/orders/5
+
+Shipping Info:
+http://localhost:86/rest/default/V1/carts/mine/shipping-information
+
+Create Order:
+http://localhost:86/rest/default/V1/carts/mine/payment-information
+
+Review order as admin:
+http://localhost:86/rest/default/V1/orders/6
+
+Create invoice:
+http://localhost:86/rest/default/V1/order/3/invoice
+
+View Invoice:
+http://localhost:86/rest/default/V1/invoices/2
+
+Create Shipment:
+http://localhost:86/rest/default/V1/order/3/ship
